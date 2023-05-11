@@ -1,0 +1,31 @@
+@import "../theme/index";
+
+.lightWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: $light-background2;
+  margin-top: 64px;
+}
+.darkWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background-color: $dark-background2;
+  margin-top: 64px;
+  padding: 32px;
+}
+
+.saveButton {
+  background-color: $focused;
+  color: $dark-body !important;
+  border: 0;
+  @extend .button;
+}
+.resetButton {
+  background-color: $light-background;
+  color: $light-body !important;
+  border: 0;
+  @extend .button;
+}

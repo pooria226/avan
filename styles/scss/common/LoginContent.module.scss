@@ -1,0 +1,18 @@
+@import "../theme/index";
+
+.lightWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: $light-background2;
+  margin-top: 64px;
+}
+.darkWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background-color: $dark-background2;
+  margin-top: 64px;
+  padding: 32px;
+}

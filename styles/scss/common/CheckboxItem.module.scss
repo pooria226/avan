@@ -1,0 +1,155 @@
+@import "../theme/index";
+.container {
+  display: block;
+  position: relative;
+  padding-inline-start: 30px;
+  cursor: pointer;
+  user-select: none;
+  input:checked ~ .lightCheckmark:after {
+    display: block;
+  }
+  input:checked ~ .lightCheckmark:before {
+    display: block;
+  }
+  user-select: none;
+  input:checked ~ .darkCheckmark:after {
+    display: block;
+  }
+  input:checked ~ .darkCheckmark:before {
+    display: block;
+  }
+  input:disabled ~ .darkCheckmark {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .lightCheckmark:before {
+    position: absolute;
+    left: -5px;
+    top: 2px;
+    height: 7px;
+    width: 1.5px;
+    border-radius: 10px;
+    background-color: $dark-background2;
+    content: "";
+    transform: translateX(11px) rotate(-45deg);
+    transform-origin: left bottom;
+  }
+  .lightCheckmark:after {
+    position: absolute;
+    left: -6px;
+    bottom: 3px;
+    height: 1.5px;
+    width: 17px;
+    border-radius: 10px;
+    background-color: $dark-background2;
+    content: "";
+    transform: translateX(13px) rotate(-48deg);
+    transform-origin: left bottom;
+  }
+  .darkCheckmark:before {
+    position: absolute;
+    left: -5px;
+    top: 2px;
+    height: 7px;
+    width: 1.5px;
+    border-radius: 10px;
+    background-color: $light-background2;
+    content: "";
+    transform: translateX(11px) rotate(-45deg);
+    transform-origin: left bottom;
+  }
+  .darkCheckmark:after {
+    position: absolute;
+    left: -6px;
+    bottom: 3px;
+    height: 1.5px;
+    width: 17px;
+    border-radius: 10px;
+    background-color: $light-background2;
+    content: "";
+    transform: translateX(13px) rotate(-48deg);
+    transform-origin: left bottom;
+  }
+}
+.lightLabel {
+  @extend .small;
+  color: $light-body;
+  display: flex;
+  line-height: 1.3;
+}
+.darkLabel {
+  @extend .small;
+  color: $dark-body;
+  display: flex;
+  line-height: 1.3;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.lightCheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 2px solid $focused;
+  border-radius: 5px;
+}
+.darkCheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 2px solid $focused;
+  border-radius: 5px;
+}
+.lightCheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.lightCheckmark:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.darkCheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.darkCheckmark:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 25px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .lable {
+    font-size: 10px !important;
+    position: relative;
+    top: 2.5px;
+  }
+}
+
+[dir="rtl"] {
+  .lightCheckmark {
+    right: 0;
+  }
+  .darkCheckmark {
+    right: 0;
+  }
+}

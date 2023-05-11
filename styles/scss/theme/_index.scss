@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "sans-ultra-light";
+  src: url("/assets/fonts/IRANSansWeb(FaNum)_UltraLight.ttf");
+}
+
+@font-face {
+  font-family: "sans-light";
+  src: url("/assets/fonts/IRANSansWeb(FaNum)_Light.ttf");
+}
+
+@font-face {
+  font-family: "sans-medium";
+  src: url("/assets/fonts/IRANSansWeb(FaNum)_Medium.ttf");
+}
+
+@font-face {
+  font-family: "sans-bold";
+  src: url("/assets/fonts/IRANSansWeb(FaNum)_Bold.ttf");
+}
+
+@font-face {
+  font-family: "barlow-bold";
+  src: url("/assets/fonts/Barlow-Bold.ttf");
+}
+
+@font-face {
+  font-family: "barlow-medium";
+  src: url("/assets/fonts/Barlow-Light.ttf");
+}
+
+$light-background: #ffffff;
+$light-background2: #eff1f8;
+$light-border: #ced2df;
+$light-border-col: #9496b3;
+$light-subtitle: #555777;
+$light-body: #2f2f3d;
+$light-title: #191a24;
+$light-model: #505263;
+$dark-background: #191a24;
+$dark-background2: #2f2f3d;
+$dark-border: #555777;
+$dark-border-col: #9496b3;
+$dark-subtitle: #ced2df;
+$dark-body: #eff1f8;
+$dark-title: #ffffff;
+$dark-model: #232230;
+$confirm: #15c0ab;
+$warn: #fbb03b;
+$danger: #f37070;
+$focused: #4b4ded;
+$teal: #6acce5;
+
+[dir="rtl"] {
+  .header3 {
+    font-family: "sans-medium";
+    font-size: 24px;
+  }
+  .subtitle {
+    font-family: "sans-light";
+    font-size: 24px;
+  }
+  .body {
+    font-family: "sans-light";
+    font-size: 16px;
+  }
+  .bold-body {
+    font-family: "sans-medium";
+    font-size: 16px;
+  }
+  .button {
+    font-family: "sans-medium";
+    font-size: 16px;
+  }
+  .link {
+    font-family: "sans-medium";
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .small {
+    font-family: "sans-light";
+    font-size: 14px;
+  }
+  .bold-title {
+    font-family: "sans-medium";
+    font-size: 12px;
+  }
+  .light-title {
+    font-family: "sans-ultra-light";
+    font-size: 12px;
+  }
+}
+
+[dir="ltr"] {
+  .header3 {
+    font-family: "barlow-bold";
+    font-size: 24px;
+  }
+  .subtitle {
+    font-family: "barlow-medium";
+    font-size: 24px;
+  }
+  .body {
+    font-family: "barlow-medium";
+    font-size: 16px;
+  }
+  .bold-body {
+    font-family: "barlow-bold";
+    font-size: 16px;
+  }
+  .button {
+    font-family: "barlow-bold";
+    font-size: 16px;
+  }
+  .link {
+    font-family: "barlow-bold";
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .small {
+    font-family: "barlow-medium";
+    font-size: 14px;
+  }
+  .bold-title {
+    font-family: "barlow-bold";
+    font-size: 12px;
+  }
+  .light-title {
+    font-family: "barlow-light";
+    font-size: 12px;
+  }
+}

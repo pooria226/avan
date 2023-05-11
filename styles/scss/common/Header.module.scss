@@ -1,0 +1,13 @@
+@import "../theme/index";
+
+.lightTitle {
+  @extend .header3;
+  color: $light-body;
+  line-height: 1.3;
+}
+
+.darkTitle {
+  @extend .header3;
+  color: $dark-body;
+  line-height: 1.3;
+}

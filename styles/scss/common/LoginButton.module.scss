@@ -1,0 +1,11 @@
+@import "../theme/index";
+
+.btn {
+  background-color: $focused !important;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  color: white !important;
+  height: 45px;
+  @extend .button;
+}

@@ -1,0 +1,103 @@
+@import "../theme/index";
+.lightInput {
+  background: $light-background !important;
+  width: 100%;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  color: $light-body !important;
+  padding-left: 14px;
+  @extend .body;
+  &::placeholder {
+    color: $light-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $light-background !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $light-background;
+  }
+  input {
+    color: $light-body !important;
+    background: $light-background !important;
+    &::placeholder {
+      color: $light-border-col !important;
+    }
+    &:focus {
+      background-color: $light-background !important;
+      outline: 0 !important;
+      box-shadow: 0 0 0 !important;
+    }
+    &:disabled {
+      cursor: no-drop;
+      background-color: $light-background;
+    }
+  }
+}
+
+.darkInput {
+  background: $dark-background !important;
+  width: 100%;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  color: $dark-body !important;
+  padding-left: 14px;
+  @extend .body;
+  &::placeholder {
+    color: $dark-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $dark-background !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $dark-background;
+  }
+  input {
+    color: $dark-body !important;
+    background: $dark-background !important;
+    &::placeholder {
+      color: $dark-border-col !important;
+    }
+    &:focus {
+      background-color: $dark-background !important;
+      outline: 0 !important;
+      box-shadow: 0 0 0 !important;
+    }
+    &:disabled {
+      cursor: no-drop;
+      background-color: $dark-background;
+    }
+  }
+}
+
+.lightLabel {
+  @extend .light-title;
+  color: $light-body;
+  width: 100%;
+}
+.darkLabel {
+  @extend .light-title;
+  color: $light-background;
+  width: 100%;
+}
+.wrapperTick {
+  position: absolute;
+  right: 15px;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.hideDateTo {
+  background-color: red;
+  width: 200px;
+  height: 100px;
+}

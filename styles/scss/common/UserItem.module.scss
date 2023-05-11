@@ -1,0 +1,37 @@
+@import "../theme/index";
+
+.lightWrapper {
+  background-color: $light-background;
+  border-radius: 16px;
+  padding: 8px 32px;
+  color: $light-body;
+  @extend .body;
+  button {
+    background-color: $light-background;
+    border: 0;
+    box-shadow: 0 0 0px;
+    padding: 0;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.darkWrapper {
+  background-color: $dark-background;
+  border-radius: 16px;
+  padding: 8px 32px;
+  color: $dark-body;
+  @extend .body;
+  button {
+    background-color: $dark-background;
+    border: 0;
+    box-shadow: 0 0 0px;
+    padding: 0;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

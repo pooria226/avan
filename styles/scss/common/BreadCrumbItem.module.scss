@@ -1,0 +1,32 @@
+@import "../theme/index";
+
+.lightWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  padding: 4px 16px;
+  background-color: $light-background2;
+  margin-top: 16px;
+  nav {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.darkWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  padding: 4px 16px;
+  background-color: $dark-background2;
+  margin-top: 16px;
+  nav {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

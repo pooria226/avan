@@ -1,0 +1,39 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.14",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@rtk-query/graphql-request-base-query": "^2.2.0",
+    "@svgr/webpack": "^7.0.0",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.4",
+    "@types/react-dom": "18.2.3",
+    "antd": "^5.4.6",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.4",
+    "graphql-request": "^6.0.0",
+    "lodash": "^4.17.21",
+    "next": "13.3.4",
+    "next-cookie": "^2.8.0",
+    "next-pwa": "^5.6.0",
+    "next-translate": "^2.0.5",
+    "next-translate-plugin": "^2.0.5",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "sass": "^1.62.1",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
+  }
+}

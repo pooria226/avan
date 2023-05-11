@@ -1,0 +1,104 @@
+@import "../theme/index";
+
+//***************************
+// Start Body
+//***************************
+
+.light-mode {
+  background-color: $light-background;
+}
+.dark-mode {
+  background-color: $dark-background;
+}
+
+//***************************
+// End Body
+//***************************
+
+//***************************
+// Start Container
+//***************************
+
+.container-custom {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//***************************
+// End Container
+//***************************
+
+//***************************
+// Start Input
+//***************************
+
+.ant-input-affix-wrapper-focused {
+  border: 2px solid $focused !important;
+  box-shadow: 0 0 0px !important;
+}
+//***************************
+// End Input
+//***************************
+
+//***************************
+// Start Spiner
+//***************************
+.button-spin {
+  .ant-spin-dot {
+    i {
+      background-color: white !important;
+    }
+  }
+}
+
+//***************************
+// End Spiner
+//***************************
+
+//***************************
+// Start Popup
+//***************************
+.ant-popover {
+  .ant-popconfirm-message-title {
+    @extend .body;
+    line-height: 1.3;
+  }
+  .ant-popconfirm-description {
+    @extend .small;
+  }
+  .ant-popconfirm-buttons {
+    .ant-btn-sm {
+      &:nth-child(1) {
+        @extend .button;
+        color: $light-body !important;
+      }
+      &:nth-child(2) {
+        background-color: $focused;
+        color: $dark-body !important;
+        @extend .button;
+      }
+    }
+  }
+}
+//***************************
+// End Popup
+//***************************
+
+//***************************
+// Start Bread
+//***************************
+
+.light-mode {
+  .ant-breadcrumb-link {
+    color: $light-body;
+  }
+}
+.dark-mode {
+  .ant-breadcrumb-link {
+    color: $dark-body;
+  }
+}
+//***************************
+// End Bread
+//***************************

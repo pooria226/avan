@@ -1,0 +1,16 @@
+{
+  "users": "Users",
+  "detail_user": "Detail User",
+  "save": "Save",
+  "reset": "Reset",
+  "delete_user": "Delete the User",
+  "sure": "Are you sure to delete this User?",
+  "yes": "Yes",
+  "no": "No",
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "logout_s": "Logout Successfully",
+  "login_s": "Login Successfully",
+  "delete_s": "Deleted Succesfully"
+}
