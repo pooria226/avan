@@ -2,7 +2,7 @@ import { createApi } from "@reduxjs/toolkit/query/react";
 import { gql } from "graphql-request";
 import { graphqlRequestBaseQuery } from "@rtk-query/graphql-request-base-query";
 import { useCookie } from "next-cookie";
-
+import Router from "next/router";
 const cookie = useCookie();
 interface LoginProps {
   email: string;
@@ -27,6 +27,7 @@ export const api = createApi({
     },
     customErrors: ({ response }) => {
       if (response.errors![0].extensions?.response.statusCode == 401) {
+        Router.replace("/login");
         cookie.remove("user");
       }
     },

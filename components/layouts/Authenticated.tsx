@@ -5,15 +5,11 @@ import { setLoader } from "@/store/loaderSlice";
 import { useDispatch } from "react-redux";
 import LoaderLayout from "./LoaderLayout";
 
-
-
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
-
 const Authenticated: FC<Props> = ({ children }) => {
-
   //***************************
   // import hooks
   //***************************
@@ -26,20 +22,20 @@ const Authenticated: FC<Props> = ({ children }) => {
   //***************************
 
   useEffect(() => {
-    dispatch(setLoader(true))
-  }, [])
+    dispatch(setLoader(true));
+  }, []);
 
   useEffect(() => {
     if (router && cookie) {
       if (!cookie.get("user")) {
         router.replace("/login");
       } else {
-        dispatch(setLoader(false))
+        dispatch(setLoader(false));
       }
     }
   }, [router.isReady, cookie]);
 
   return <LoaderLayout>{children}</LoaderLayout>;
-}
+};
 
-export default Authenticated
+export default Authenticated;
